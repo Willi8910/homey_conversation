@@ -1,0 +1,31 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Projects" %>
+
+<h1 style="text-align: left;">Projects</h1>
+
+<p>
+  <%= link_to "New project", new_project_path, class: "button" %>
+</p>
+
+<table id="projects-table" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Project Name</th>
+      <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Status</th>
+      <th style="border: 1px solid #ddd; padding: 8px; width: 150px;">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;"><%= project.name %></td>
+        <td style="border: 1px solid #ddd; padding: 8px; text-align: left;"><%= project.status %></td>
+        <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">
+          <%= link_to "Show", project, style: "margin-right: 5px;" %>
+          <%= link_to 'Edit', edit_project_path(project) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

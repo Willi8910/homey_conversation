@@ -1,0 +1,22 @@
+<p style="color: green;"><%= notice %></p>
+
+<div class="project-details">
+  <%= render @project %>
+
+  <div class="project-actions" style="margin-bottom: 20px;">
+    <%= button_to "Edit this project", edit_project_path(@project), method: :get %> </br>
+    <%= button_to "Back to projects", projects_path, method: :get %>  </br>
+    <%= button_to "Destroy this project", @project, method: :delete, data: { confirm: "Are you sure you want to delete this project?" } %>
+  </div>
+
+  <hr>
+
+  <div class="project-history">
+    <h2>History</h2>
+    <%= render @project.comments %>
+
+    <hr>
+    <h3>Add a Comment</h3>
+    <%= render "comments/form" %>
+  </div>
+</div>
