@@ -1,34 +1,22 @@
-# README
+Technical test for Homey
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hosted app for testing: 
+https://homey-conversation.onrender.com/
 
-Things you may want to cover:
+Please note since this is free hosting, so for initial load it will take a while, around 50 seconds
 
-* Ruby version
+Simple Demonstration:
+https://github.com/user-attachments/assets/da5488e6-f090-4932-8752-50a736485a71
 
-* System dependencies
+Additional Note:
+- I use devise as authentication logic, to be able to login and sign up
+- I don't fully styling the webpage due to time constraint, just good enough for UX to percieve
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Questions:
+Questions and Expected answers from Collague:
 - How is the project created?
-    Project can be created by anyone, also can be viewed by anyone
+    Project can be created by anyone in main page, also can be viewed by anyone
 - What is the project fields consist of?
-    Project only have name field
+    Project only have name and status fields
 - How's the user journey to leave the comment?
     - User login or register first
     - User can view the projects, and can choose any project
